@@ -2,12 +2,12 @@ const exchangeRates = {
     USD: {
         USD: 1,
         EUR: 1.11,
-        UZS: 12.700
+        UZS: 12700
     },
     EUR: {
-        USD: 1.11,
+        USD: 0.90,
         EUR: 1,
-        UZS: 14.140
+        UZS: 14140
     },
     UZS: {
         USD: 0.71,
@@ -17,7 +17,7 @@ const exchangeRates = {
 };
 
 document.getElementById('convert').addEventListener('click', function() {
-    const amount = document.getElementById('amount').value;
+    const amount = parseFloat(document.getElementById('amount').value);
     const fromCurrency = document.getElementById('fromCurrency').value;
     const toCurrency = document.getElementById('toCurrency').value;
 
